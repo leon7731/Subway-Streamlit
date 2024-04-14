@@ -3,7 +3,7 @@
 # Mindhive Assessment
 
 ## 1. API and Visualization (5KM Radius Catchment Highlight)
-### [Live APP](https://subway-app-cz5qs6kyoxa3f4kheg76xe.streamlit.app/)
+### [Live APP](https://subway-app.streamlit.app/)
 Create a web application that interacts with your API to visualize Subway outlets on a map. This includes:
    - Displaying a 5KM radius catchment around each outlet.
    - Highlighting outlets that intersect with another outlet’s 5KM radius catchment.
