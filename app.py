@@ -4,6 +4,9 @@ import streamlit as st
 import subway_api_func as saf
 import mapping_func as mf
 
+# Config Folder
+from Config.Config import settings
+
 # Plot 
 from streamlit_folium import st_folium
 
@@ -22,8 +25,8 @@ st.title('Subway Location App')
 ### Part 1: Subway Location Map ###
 @st.cache_data
 def get_subway_data():
-    jwt_token = saf.Login(Email = "linggest90@gmail.com", 
-                Password = "!lingges!mindhive", 
+    jwt_token = saf.Login(Email = st.secrets["email"], 
+                Password = st.secrets["password"], 
                 URL = 'http://50.19.149.26/auth/login')
 
 
@@ -44,7 +47,7 @@ st_folium(subway_info_map, width=1000, height=500)
 
 st.title("Chat App")
 
-os.environ['OPENAI_API_KEY'] = "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"
+os.environ['OPENAI_API_KEY'] = st.secrets["openai_api_key"]
 
 # Cached function to load documents and create index
 
