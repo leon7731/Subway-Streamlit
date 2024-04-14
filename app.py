@@ -4,9 +4,6 @@ import streamlit as st
 import subway_api_func as saf
 import mapping_func as mf
 
-# Config Folder
-from Config.Config import settings
-
 # Plot 
 from streamlit_folium import st_folium
 
