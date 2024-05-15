@@ -1,6 +1,6 @@
 ![Subway](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Subway_2016_logo.svg/512px-Subway_2016_logo.svg.png) 
 
-# Mindhive Assessment
+<!-- # Mindhive Assessment-->
 
 ## 1. API and Visualization (5KM Radius Catchment Highlight)
 ### [Live APP](https://subway-app.streamlit.app/)
